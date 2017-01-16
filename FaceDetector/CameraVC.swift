@@ -64,8 +64,9 @@ extension CameraVC: CaptureSessionControllerDelegate {
         }
         
         if let img = self.imageView.image {
-            faceDetector.detectFace(image: img, applyToView: self.imageView)
+            faceDetector.detectFaceFrom(image: img, applyToView: self.imageView)
         }
+       
      }
     
     func imageFromSampleBuffer(sampleBuffer : CMSampleBuffer) -> UIImage
