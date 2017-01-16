@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController, UINavigationControllerDelegate {
+    var photo: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 }
-
